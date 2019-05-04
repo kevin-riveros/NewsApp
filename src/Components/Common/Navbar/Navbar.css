@@ -1,0 +1,30 @@
+.NavBar {
+    height: 56 px;
+    width: 100%;
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 90;
+    flex-flow: column;
+  }
+  .TituloN{
+    padding-top:20px; 
+    padding-bottom: 10px;
+
+    color:#4c4c4c;
+  }
+  @media(min-width: 500px){
+    .NavBar {
+      flex-flow: row;
+    }
+    .Titulo{
+      padding-top:0; 
+      padding-bottom: 0;
+
+    }
+}

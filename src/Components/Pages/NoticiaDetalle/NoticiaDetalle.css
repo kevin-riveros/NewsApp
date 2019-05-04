@@ -1,0 +1,59 @@
+.ImagenDetalle{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0 0 25px 25px;
+    z-index: -1;
+
+}
+.Gradiente{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient( to bottom, rgba(255, 255, 255, 0.2), black ) no-repeat center center ;
+    background-size: cover;
+    border-radius: 0 0 25px 25px;
+    transform: translate(0, -400px);
+}
+.Centrado{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    color: white;
+}
+
+.ContainerDetalle{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    border-radius: 0 0 25px 25px;
+    background-color: #ddd;
+
+}
+.Icono{
+   margin: 15px 10px 10px 10px;
+   width: 15px;
+   height: 15px;
+}
+
+ .IconoDer{
+    margin: 15px 20px 10px 10px;
+    width: 15px;
+   height: 15px;
+ }
+ .Text{
+    padding-top: 10px;
+ }
+.Detalle{
+    font-size: 80%;
+    text-align: justify;
+    color: #838383;
+    padding: 0 20px;
+    
+}
+.Fecha{
+    font-size: 80%;
+    text-align: justify;
+    color: #a1a1a1;
+    padding: 20px 20px 0 20px;
+}

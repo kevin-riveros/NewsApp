@@ -1,0 +1,33 @@
+.Card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 25px;
+
+  }
+  
+  .Card:hover {
+    box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
+    transform: translateY(-10px);
+  }
+  .Imagen{
+    border-radius: 25px 25px 0 0;
+    height: 180px;
+    object-fit: cover;
+
+  }
+  .Titulo {
+    font-size: 80%;
+  }
+  .Container {
+    padding: 16px;
+  }
+
+  .Container p{
+    font-size: 80%;
+    text-align: justify;
+    color: #a1a1a1;
+    height: 100px;
+    overflow: hidden;
+  }
+  

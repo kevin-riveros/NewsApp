@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Route,Switch} from 'react-router-dom';
+import Layout from './Components/Layout/Layout/Layout';
+import Innovacion from './Components/Pages/Innovacion/Innovacion';
+import Reconocimiento from './Components/Pages/Reconocimiento/Reconocimiento';
+import Institucional from './Components/Pages/Institucional/Institucional';
+import Todos from './Components/Pages/Todos/Todos';
+import error from './Components/Pages/Error/Error.js';
+import NoticiaDetalle from './Components/Pages/NoticiaDetalle/NoticiaDetalle';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Layout>
+            <Switch>
+              <Route path="/innovacion" exact component={Innovacion} />
+              <Route path="/reconocimiento" exact component={Reconocimiento} />
+              <Route path="/institucional" exact component={Institucional} />
+              <Route path="/Todos"  exact component={Todos} />
+              <Route path="/Noticia/:id" component={NoticiaDetalle} />
+              <Route path="/"  exact component={Todos} />
+              <Route  component={error} />
+            </Switch>
+        </Layout>
     </div>
   );
 }

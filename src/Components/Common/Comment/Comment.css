@@ -1,0 +1,49 @@
+.MessageComponent{
+    padding:0 20px;  
+    display: flex;
+    justify-content: space-between;  
+}
+.Message{
+    width: 100%;
+    
+  }
+  .Message input {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    
+    height: 37px;
+    width: 100%;
+    background: transparent;
+    color: #7f7f7f;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: 0;
+    border: 2px solid #cbcbcb;
+    outline: none;
+    border-radius: 37px;
+    padding: 0 10px;
+    pointer-events: all;
+    -webkit-transition: border .25s ease, width .125s ease .125s;
+    transition: border .25s ease, width .125s ease .125s;
+  }
+  .Message input:focus {
+    border: 2px solid #7f7f7f;
+    color: #7a7a7a;
+  }
+  .Message input:hover {
+    border: 2px solid #7f7f7f;
+    color: #7a7a7a;
+  }
+  .Message input::placeholder {
+    color: #7f7f7f;
+  }
+  .Icon{
+    width: 20px;
+    height: 20px;
+    margin:auto;
+    vertical-align: middle;
+    margin-left: 5px;
+    
+  }
